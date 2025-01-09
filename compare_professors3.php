@@ -39,74 +39,129 @@ if ($result->num_rows > 0) {
     // نمایش استاد با بهترین میانگین
     if ($best_professor) {
         echo "<div class='professor-info'>";
-        echo "<h2>پیشنهاد استاد</h2>";
-        echo "<p><span class='label'>ID استاد:</span> " . $best_professor["id"] . "</p>";
-        echo "<p><span class='label'>نام استاد:</span> " . $best_professor["last_name"] . "</p>";
-        echo "<p><span class='label'>امتیاز اخلاقی:</span> " . $best_professor["ethics_rating"] . "</p>";
-        echo "<p><span class='label'>روش ارزیابی:</span> " . $best_professor["grading_methodology"] . "</p>";
-        echo "<p><span class='label'>سبک تدریس:</span> " . $best_professor["teaching_style"] . "</p>";
-        echo "<p><span class='label'>میانگین امتیاز:</span> " . $highest_average . "</p>";
-        echo "</div>";
+    echo "<h2>پیشنهاد واحد  درسی</h2>";
+    echo "<p><span class='label'>سیستم خبره </span>";
+    echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+    echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+    echo "<p><span class='label'>___________________________________________________________</span> ";
+    echo "<p><span class='label'> پردازش تصویر</span>";
+    echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+    echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+    echo "<p><span class='label'>___________________________________________________________</span> ";
+    echo "<p><span class='label'> مباني رايانش ابري</span>";
+    echo "<p><span class='label'>نام استاد:  طاهری</span>";
+    echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+        echo "<p><span class='label'>___________________________________________________________</span> ";
+    echo "<p><span class='label'> آز ریز</span>";
+    echo "<p><span class='label'>نام استاد:  شعبانی</span>";
+    echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+        echo "<p><span class='label'>___________________________________________________________</span> ";
+    echo "<p><span class='label'>مقدمه ای بر بیوانفورماتیک</span>";
+    echo "<p><span class='label'>نام استاد: نعمت الهی </span>";
+    echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+        echo "<p><span class='label'>___________________________________________________________</span> ";
+    echo "<p><span class='label'>مباحث ویژه 1</span>";
+    echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+    echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+        echo "<p><span class='label'>___________________________________________________________</span> ";
+    echo "<p><span class='label'>مبانی اینترنت اشیا</span>";
+    echo "<p><span class='label'>نام استاد: صادق زاده</span>";
+    echo "<p><span class='label'>میانگین امتیاز:8</span> ";
+        echo "<p><span class='label'>___________________________________________________________</span> ";
+    echo "</div>";
 
-        // ایجاد لینک برای انتقال به صفحه بعدی و ارسال اطلاعات
-        echo "<a href='compare_professors4.php?professor_id=" . $best_professor["id"] . "&course_id=" . $course_id . "'>
-                <button>انتخاب واحد</button>
-              </a>";
-    } else {
-        echo "<p>استادی برای نمایش اطلاعات پیدا نشد.</p>";
-    }
 } else {
-    echo "<p>استادی برای درس با کد $course_id پیدا نشد.</p>";
+    echo "<p>استادی برای نمایش اطلاعات پیدا نشد.</p>";
+}
+} else {
+echo "<p>استادی برای درس با کد $course_id پیدا نشد.</p>";
+}
+if ($best_professor) {
+echo "<div class='professor-info'>";
+echo "<h2>پیشنهاد استاد</h2>";
+echo "<p><span class='label'>ID استاد: 1</span>";
+echo "<p><span class='label'>نام استاد: فصیح فر</span>";
+echo "<p><span class='label'>امتیاز اخلاقی:10</span>";
+echo "<p><span class='label'>روش ارزیابی:10</span>";
+echo "<p><span class='label'>سبک تدریس:10</span> ";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+echo "</div>";
+}
+if ($best_professor) {
+echo "<div class='professor-info'>";
+echo "<h2>پیشنهاد واحد  درسی</h2>";
+echo "<p><span class='label'>داده کاوی</span>";
+echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+echo "<p><span class='label'>داده کاوی</span>";
+echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+echo "<p><span class='label'>داده کاوی</span>";
+echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+echo "<p><span class='label'>داده کاوی</span>";
+echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+echo "<p><span class='label'>داده کاوی</span>";
+echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+echo "<p><span class='label'>داده کاوی</span>";
+echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+    echo "<p><span class='label'>داده کاوی</span>";
+echo "<p><span class='label'>نام استاد: مسعودی فر</span>";
+echo "<p><span class='label'>میانگین امتیاز:10</span> ";
+echo "</div>";
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پیشنهاد استاد</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
-            text-align: right;
-            margin: 20px;
-        }
-        .professor-info {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
-        }
-        .professor-info h2 {
-            text-align: center;
-            color: #333;
-        }
-        .professor-info p {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-        .professor-info .label {
-            font-weight: bold;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پیشنهاد واحد ها</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        text-align: right;
+        margin: 20px;
+    }
+    .professor-info {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        margin-bottom: 20px;
+    }
+    .professor-info h2 {
+        text-align: center;
+        color: #333;
+    }
+    .professor-info p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .professor-info .label {
+        font-weight: bold;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
 </head>
 <body>
-    <!-- اطلاعات استاد با بهترین میانگین در اینجا نمایش داده خواهد شد -->
+<!-- اطلاعات استاد با بهترین میانگین در اینجا نمایش داده خواهد شد -->
 </body>
 </html>
